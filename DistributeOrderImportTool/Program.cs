@@ -47,6 +47,7 @@ namespace DistributeOrderImportTool
         /// <returns>异常字符串文本</returns>
         static string GetExceptionMsg(Exception ex, string backStr)
         {
+            //异常处理，弹出对话框提示异常信息。
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("****************************异常文本****************************");
             sb.AppendLine("【出现时间】：" + DateTime.Now.ToString());
@@ -59,7 +60,7 @@ namespace DistributeOrderImportTool
             else
             {
                 sb.AppendLine("【未处理异常】：" + backStr);
-            }
+            } 
             sb.AppendLine("***************************************************************");
             return sb.ToString();
         }
