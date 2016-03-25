@@ -403,7 +403,7 @@ namespace DistributeOrderImportTool.BizProcessor
                     docRowData.ProductQtys = new OrderImportCellData("购买数量(多个用逗号分隔)", row.GetCell(18).ToString());
                     docRowData.ProductPrices = new OrderImportCellData("商品价格(多个用逗号分隔)", row.GetCell(19).ToString());
                     docRowData.ArteryLogisticID = new OrderImportCellData("干线ID",  row.GetCell(20)==null? "0": row.GetCell(20).ToString());
-                    docRowData.IsMerchantSelfFEP = new OrderImportCellData("自行购汇", row.GetCell(21) == null ? "0" : row.GetCell(20).ToString());
+                    docRowData.IsMerchantSelfFEP = new OrderImportCellData("自行购汇", row.GetCell(21) == null ? "0" : row.GetCell(21).ToString());
                     docData.Add(docRowData);
                 }
             }
